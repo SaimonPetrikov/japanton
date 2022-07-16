@@ -3,6 +3,7 @@ Innovative service - auto parsing online
 
 1) Клонировали репозиторий(или обновить репозиторий)
 2) composer install
+3) Создать .env файл в корне проекта(содержимое взять в группе в тг)
 3) docker-compose up -d
 4) docker-compose exec app php artisan key:generate
 5) docker-compose exec app php artisan config:cache
