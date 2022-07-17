@@ -1,10 +1,10 @@
-POST http://localhost:80/api/auth/register
+POST http://localhost:80/api/auth/signup
 Content-Type: application/json
 
 {
-    "name": "test",
-    "email": "test@er.com",
-    "password": "1234ew567"
+    "name": "test9",
+    "email": "tet@er.com",
+    "password": "1238ew567"
 }
 
 ###
@@ -20,13 +20,13 @@ Content-Type: application/json
 ###
 
 GET http://localhost:80/api/auth/logout
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4MDY5Nzk3LCJleHAiOjE2NTgwNzMzOTcsIm5iZiI6MTY1ODA2OTc5NywianRpIjoiUGRLYVlLZnB3SFJtQjZhSCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7uUnooeOyijfnqrLWuCtMG3xwcPIrjOIU5ykuCsd7n8
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL3JlZnJlc2giLCJpYXQiOjE2NTgwNzExMDcsImV4cCI6MTY1ODA3NTIxNiwibmJmIjoxNjU4MDcxNjE2LCJqdGkiOiJEbFNNR054WThHbUowMTc1Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.GSGx69oyqdPYUVMcMLmup2yZmP0Ds_z8R6a9qEr6T38
 Content-Type: application/json
 
 ###
 
 GET http://localhost:80/api/auth/refresh
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4MDY5Nzk3LCJleHAiOjE2NTgwNzMzOTcsIm5iZiI6MTY1ODA2OTc5NywianRpIjoiUGRLYVlLZnB3SFJtQjZhSCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7uUnooeOyijfnqrLWuCtMG3xwcPIrjOIU5ykuCsd7n8
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4MDcxMTA3LCJleHAiOjE2NTgwNzQ3MDcsIm5iZiI6MTY1ODA3MTEwNywianRpIjoiWmg3N3I3TDhDaHBSaGJxMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.OZ3Z3KMHTRGG__dGP9ss4R9ibQw4ugHxTX_b2dpbcgM
 Content-Type: application/json
 
 ###
