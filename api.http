@@ -2,9 +2,9 @@ POST http://localhost:80/api/auth/signup
 Content-Type: application/json
 
 {
-    "name": "test9",
-    "email": "tet@er.com",
-    "password": "1238ew567"
+    "name": "testV1",
+    "email": "dsddddsdfdуdd@er.com",
+    "password": "12382ew567"
 }
 
 ###
@@ -33,4 +33,9 @@ Content-Type: application/json
 
 GET http://localhost:80/api/auth/user-profile
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4MDcxMTA3LCJleHAiOjE2NTgwNzQ3MDcsIm5iZiI6MTY1ODA3MTEwNywianRpIjoiWmg3N3I3TDhDaHBSaGJxMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.OZ3Z3KMHTRGG__dGP9ss4R9ibQw4ugHxTX_b2dpbcgM
+Content-Type: application/json
+
+###
+
+POST http://localhost:80/api/car/create
 Content-Type: application/json

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CarController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -23,4 +24,8 @@ Route::group(['middleware' => 'api',], function () {
         Route::get('/refresh', [AuthController::class, 'refresh']);
         Route::get('/user-profile', [AuthController::class, 'userProfile']);
     });
+//    Route::group(['prefix' => 'car',], function () {
+//        Route::post('/create', [CarController::class, 'create']);
+//    });
 });
+
