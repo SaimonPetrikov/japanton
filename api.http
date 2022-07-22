@@ -2,9 +2,9 @@ POST http://localhost:80/api/auth/signup
 Content-Type: application/json
 
 {
-    "name": "testV1",
-    "email": "dsddddsdfdуdd@er.com",
-    "password": "12382ew567"
+    "id": "test9",
+    "email": "tet@er.com",
+    "password": "1238ew567"
 }
 
 ###
@@ -38,4 +38,33 @@ Content-Type: application/json
 ###
 
 POST http://localhost:80/api/car/create
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4NDg3NzgwLCJleHAiOjE2NTg0OTEzODAsIm5iZiI6MTY1ODQ4Nzc4MCwianRpIjoidExTZjhjS2hPWGcxbTl0OCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ERRxN8So8rgkg-GhGHmk7x8dTEhskPJgbl5bchTWOrU
 Content-Type: application/json
+
+{
+    "manufacturer_id": "9",
+    "model_id": "1",
+    "body_id": "1",
+    "engine_id": "1",
+    "transmission_id": "1",
+    "mileage": "123",
+    "headlight": "1238ew567",
+    "taillight": "1238ew567",
+    "marriage": "1238ew567",
+    "notes": "1238ew567",
+    "notes_zibiz": "1238ew567",
+    "images": "1238ew567",
+    "videos": "1238ew567",
+    "user_id": "1",
+    "body_no": "1238ew567",
+    "engine_no": "1238ew567",
+    "in_the_way": 1,
+    "retail": 1,
+    "small": 1,
+    "archive": 1,
+    "sticker_notes": "tet@er.com",
+    "manager_id": 1,
+    "documents": "1238ew567",
+    "provider_id": "1",
+    "provider_engine_price": "1234"
+}

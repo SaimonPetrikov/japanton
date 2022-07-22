@@ -24,8 +24,10 @@ Route::group(['middleware' => 'api',], function () {
         Route::get('/refresh', [AuthController::class, 'refresh']);
         Route::get('/user-profile', [AuthController::class, 'userProfile']);
     });
-//    Route::group(['prefix' => 'car',], function () {
-//        Route::post('/create', [CarController::class, 'create']);
-//    });
+    Route::group(['middleware' => ['jwt.auth'], ], function () {
+        Route::group(['prefix' => 'car',], function () {
+            Route::post('/create', [CarController::class, 'create']);
+        });
+    });
 });
 
