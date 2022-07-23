@@ -2,9 +2,10 @@ POST http://localhost:80/api/auth/signup
 Content-Type: application/json
 
 {
-    "id": "test9",
-    "email": "tet@er.com",
-    "password": "1238ew567"
+    "id": "vladtest",
+    "email": "vladtest@er.com",
+    "name": "vladtest",
+    "password": "vladtest"
 }
 
 ###
@@ -13,58 +14,103 @@ POST http://localhost:80/api/auth/login
 Content-Type: application/json
 
 {
-    "email": "test@er.com",
-    "password": "1234ew567"
+    "email": "vladtest@er.com",
+    "password": "vladtest"
 }
 
 ###
 
 GET http://localhost:80/api/auth/logout
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL3JlZnJlc2giLCJpYXQiOjE2NTgwNzExMDcsImV4cCI6MTY1ODA3NTIxNiwibmJmIjoxNjU4MDcxNjE2LCJqdGkiOiJEbFNNR054WThHbUowMTc1Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.GSGx69oyqdPYUVMcMLmup2yZmP0Ds_z8R6a9qEr6T38
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4NTk3NTI2LCJleHAiOjE2NTg2MDExMjYsIm5iZiI6MTY1ODU5NzUyNiwianRpIjoiMUFpS2w5V0dJZHZWRVVCdSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.CZXx8vrXdmiIo_h_Dggf5GKSwqlgkcrIoaRBqFsEhys
 Content-Type: application/json
 
 ###
 
 GET http://localhost:80/api/auth/refresh
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4MDcxMTA3LCJleHAiOjE2NTgwNzQ3MDcsIm5iZiI6MTY1ODA3MTEwNywianRpIjoiWmg3N3I3TDhDaHBSaGJxMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.OZ3Z3KMHTRGG__dGP9ss4R9ibQw4ugHxTX_b2dpbcgM
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4NTk3NTI2LCJleHAiOjE2NTg2MDExMjYsIm5iZiI6MTY1ODU5NzUyNiwianRpIjoiMUFpS2w5V0dJZHZWRVVCdSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.CZXx8vrXdmiIo_h_Dggf5GKSwqlgkcrIoaRBqFsEhys
 Content-Type: application/json
 
 ###
 
 GET http://localhost:80/api/auth/user-profile
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4MDcxMTA3LCJleHAiOjE2NTgwNzQ3MDcsIm5iZiI6MTY1ODA3MTEwNywianRpIjoiWmg3N3I3TDhDaHBSaGJxMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.OZ3Z3KMHTRGG__dGP9ss4R9ibQw4ugHxTX_b2dpbcgM
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4NTk3NTI2LCJleHAiOjE2NTg2MDExMjYsIm5iZiI6MTY1ODU5NzUyNiwianRpIjoiMUFpS2w5V0dJZHZWRVVCdSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.CZXx8vrXdmiIo_h_Dggf5GKSwqlgkcrIoaRBqFsEhys
 Content-Type: application/json
 
 ###
 
 POST http://localhost:80/api/car/create
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4NDg3NzgwLCJleHAiOjE2NTg0OTEzODAsIm5iZiI6MTY1ODQ4Nzc4MCwianRpIjoidExTZjhjS2hPWGcxbTl0OCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ERRxN8So8rgkg-GhGHmk7x8dTEhskPJgbl5bchTWOrU
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4NTk3NTI2LCJleHAiOjE2NTg2MDExMjYsIm5iZiI6MTY1ODU5NzUyNiwianRpIjoiMUFpS2w5V0dJZHZWRVVCdSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.CZXx8vrXdmiIo_h_Dggf5GKSwqlgkcrIoaRBqFsEhys
 Content-Type: application/json
 
 {
-    "manufacturer_id": "9",
-    "model_id": "1",
-    "body_id": "1",
-    "engine_id": "1",
+    "manufacturer_id": "10",
+    "model_id": "3",
+    "body_id": "2",
+    "engine_id": "2",
     "transmission_id": "1",
-    "mileage": "123",
-    "headlight": "1238ew567",
-    "taillight": "1238ew567",
-    "marriage": "1238ew567",
-    "notes": "1238ew567",
-    "notes_zibiz": "1238ew567",
-    "images": "1238ew567",
-    "videos": "1238ew567",
-    "user_id": "1",
-    "body_no": "1238ew567",
-    "engine_no": "1238ew567",
-    "in_the_way": 1,
-    "retail": 1,
-    "small": 1,
-    "archive": 1,
-    "sticker_notes": "tet@er.com",
-    "manager_id": 1,
-    "documents": "1238ew567",
-    "provider_id": "1",
-    "provider_engine_price": "1234"
+    "mileage": "111",
+    "headlight": "test",
+    "taillight": "test",
+    "marriage": "test",
+    "notes": "test",
+    "notes_zibiz": "test",
+    "images": "test",
+    "videos": "test",
+    "user_id": "3",
+    "body_no": "test",
+    "engine_no": "test",
+    "in_the_way": 2,
+    "retail": 2,
+    "small": 2,
+    "archive": 2,
+    "sticker_notes": "test11111@er.com",
+    "manager_id": 2,
+    "documents": "test",
+    "provider_id": "4",
+    "provider_engine_price": "1236"
 }
+
+###
+
+POST http://localhost:80/api/car/update/8
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4NTk3NTI2LCJleHAiOjE2NTg2MDExMjYsIm5iZiI6MTY1ODU5NzUyNiwianRpIjoiMUFpS2w5V0dJZHZWRVVCdSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.CZXx8vrXdmiIo_h_Dggf5GKSwqlgkcrIoaRBqFsEhys
+Content-Type: application/json
+
+{
+    "taillight": "no",
+    "marriage": "no",
+    "notes": "no",
+    "notes_zibiz": "no",
+    "images": "no",
+    "videos": "no",
+    "user_id": "3",
+    "body_no": "no",
+    "engine_no": "no",
+    "in_the_way": 3,
+    "retail": 3,
+    "small": 3,
+    "archive": 3,
+    "sticker_notes": "tet@er.com",
+    "manager_id": 3,
+    "documents": "1238ewerww567",
+    "provider_id": "3",
+    "provider_engine_price": "1235"
+}
+
+###
+
+GET http://localhost:80/api/car/delete/8
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4NTk3NTI2LCJleHAiOjE2NTg2MDExMjYsIm5iZiI6MTY1ODU5NzUyNiwianRpIjoiMUFpS2w5V0dJZHZWRVVCdSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.CZXx8vrXdmiIo_h_Dggf5GKSwqlgkcrIoaRBqFsEhys
+Content-Type: application/json
+
+###
+
+GET http://localhost:80/api/car/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4NTk3NTI2LCJleHAiOjE2NTg2MDExMjYsIm5iZiI6MTY1ODU5NzUyNiwianRpIjoiMUFpS2w5V0dJZHZWRVVCdSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.CZXx8vrXdmiIo_h_Dggf5GKSwqlgkcrIoaRBqFsEhys
+Content-Type: application/json
+
+###
+
+GET http://localhost:80/api/car/show/7
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4NTk3NTI2LCJleHAiOjE2NTg2MDExMjYsIm5iZiI6MTY1ODU5NzUyNiwianRpIjoiMUFpS2w5V0dJZHZWRVVCdSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.CZXx8vrXdmiIo_h_Dggf5GKSwqlgkcrIoaRBqFsEhys
+Content-Type: application/json

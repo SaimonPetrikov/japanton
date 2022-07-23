@@ -27,6 +27,10 @@ Route::group(['middleware' => 'api',], function () {
     Route::group(['middleware' => ['jwt.auth'], ], function () {
         Route::group(['prefix' => 'car',], function () {
             Route::post('/create', [CarController::class, 'create']);
+            Route::post('/update/{id}', [CarController::class, 'update']);
+            Route::get('/delete/{id}', [CarController::class, 'delete']);
+            Route::get('/', [CarController::class, 'index']);
+            Route::get('/show/{id}', [CarController::class, 'show']);
         });
     });
 });
