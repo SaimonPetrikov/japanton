@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Car;
 use App\Models\Provider;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -15,7 +14,7 @@ class ProviderController extends Controller
 
         return response()->json([
             'message' => 'provider list',
-            'car' => $provider
+            'provider' => $provider
         ], 201);
     }
 
@@ -26,12 +25,12 @@ class ProviderController extends Controller
         if (isset($provider)) {
             return response()->json([
                 'message' => 'provider successfully found',
-                'car' => $provider
+                'provider' => $provider
             ], 201);
         }
         return response()->json([
             'message' => 'provider is not isset',
-            'car' => $provider
+            'provider' => $provider
         ], 404);
     }
 
@@ -41,7 +40,7 @@ class ProviderController extends Controller
 
         return response()->json([
             'message' => 'provider successfully add',
-            'car' => $provider
+            'provider' => $provider
         ], 201);
     }
 
@@ -58,12 +57,12 @@ class ProviderController extends Controller
         if (isset($error)) {
             return response()->json([
                 'message' => $error,
-                'car' => $provider
+                'provider' => $provider
             ], 404);
         }
         return response()->json([
             'message' => 'provider successfully update',
-            'car' => $provider
+            'provider' => $provider
         ], 201);
     }
 
@@ -72,7 +71,7 @@ class ProviderController extends Controller
         $provider = Provider::find($id)->delete();
         return response()->json([
             'message' => 'provider delete',
-            'car' => $provider
+            'provider' => $provider
         ], 201);
     }
 }
