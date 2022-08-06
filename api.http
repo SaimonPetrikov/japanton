@@ -99,8 +99,8 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:80/api/car/delete/8
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU4NTk3NTI2LCJleHAiOjE2NTg2MDExMjYsIm5iZiI6MTY1ODU5NzUyNiwianRpIjoiMUFpS2w5V0dJZHZWRVVCdSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.CZXx8vrXdmiIo_h_Dggf5GKSwqlgkcrIoaRBqFsEhys
+GET http://localhost:80/api/car/delete/80
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU5ODA3NTIyLCJleHAiOjE2NTk4MTExMjIsIm5iZiI6MTY1OTgwNzUyMiwianRpIjoiSDlpcHdxWW55a0tKdnZIbiIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.NMxBxUDH-LSj9Gn6BSDnCl2heKOYSb0DHCPlhY2WbgE
 Content-Type: application/json
 
 ###
@@ -142,8 +142,8 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:80/api/provider/delete/4
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU5Nzg4NjAyLCJleHAiOjE2NTk3OTIyMDIsIm5iZiI6MTY1OTc4ODYwMiwianRpIjoidHo1UkR2SEd6bXFudWpBMyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.49rTgZZ5muF9RvbyyxfGmQttUjhBqRelHhwvk8P_aNY
+GET http://localhost:80/api/provider/delete/2
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU5ODA3NTIyLCJleHAiOjE2NTk4MTExMjIsIm5iZiI6MTY1OTgwNzUyMiwianRpIjoiSDlpcHdxWW55a0tKdnZIbiIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.NMxBxUDH-LSj9Gn6BSDnCl2heKOYSb0DHCPlhY2WbgE
 Content-Type: application/json
 
 ###
@@ -165,28 +165,29 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vb
 Content-Type: application/json
 
 {
-    "name_ru": "Тест2",
-    "name_en": "Test2",
-    "sticker_fields": "test text2",
-    "sort": 4
+    "name_ru": "Тест3",
+    "name_en": "Test3",
+    "sticker_fields": "test text3",
+    "sort": 6
 }
+
 ###
 
-POST http://localhost:80/api/part/update/1
+POST http://localhost:80/api/part/update/2
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU5Nzk3MjY3LCJleHAiOjE2NTk4MDA4NjcsIm5iZiI6MTY1OTc5NzI2NywianRpIjoiMlRrT0ZQbU9Mc1J2b0hFSyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cDvBlECZzZCABDdxQWmbCFvgS4n1p8KbGsRbjBD_EiU
 Content-Type: application/json
 
 {
     "name_ru": "Тест",
     "name_en": "Test",
-    "sticker_fields": "text test",
+    "sticker_fields": "test text",
     "sort": 2
 }
 
 ###
 
-GET http://localhost:80/api/part/delete/1
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU5Nzk3MjY3LCJleHAiOjE2NTk4MDA4NjcsIm5iZiI6MTY1OTc5NzI2NywianRpIjoiMlRrT0ZQbU9Mc1J2b0hFSyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cDvBlECZzZCABDdxQWmbCFvgS4n1p8KbGsRbjBD_EiU
+GET http://localhost:80/api/part/delete/20
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU5ODA3NTIyLCJleHAiOjE2NTk4MTExMjIsIm5iZiI6MTY1OTgwNzUyMiwianRpIjoiSDlpcHdxWW55a0tKdnZIbiIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.NMxBxUDH-LSj9Gn6BSDnCl2heKOYSb0DHCPlhY2WbgE
 Content-Type: application/json
 
 ###
@@ -197,6 +198,63 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:80/api/part/show/2
+GET http://localhost:80/api/part/show/3
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU5Nzk3MjY3LCJleHAiOjE2NTk4MDA4NjcsIm5iZiI6MTY1OTc5NzI2NywianRpIjoiMlRrT0ZQbU9Mc1J2b0hFSyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cDvBlECZzZCABDdxQWmbCFvgS4n1p8KbGsRbjBD_EiU
+Content-Type: application/json
+
+###
+
+POST http://localhost:80/api/part-item/create
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU5ODA3MDcyLCJleHAiOjE2NTk4MTA2NzIsIm5iZiI6MTY1OTgwNzA3MiwianRpIjoicXd6MThsbVR2NlJaR0h4RSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.IB0TMl7MyviH_lfNb--5WqR8rPB1ZC9MfaQNoG2-RDw
+Content-Type: application/json
+
+{
+    "parent_id": 1,
+    "name_ru": "Тест2",
+    "name_en": "Test2",
+    "name_jp": "Test2",
+    "type": 6,
+    "weight": 1,
+    "price": 2000,
+    "sort": 2,
+    "car_type": 0,
+    "options": "test",
+    "code": "BM"
+}
+
+###
+POST http://localhost:80/api/part-item/update/10
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU5ODA2MTYxLCJleHAiOjE2NTk4MDk3NjEsIm5iZiI6MTY1OTgwNjE2MSwianRpIjoiZUpVdldYeDlSRFpoN1RXayIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cNitN1eOknq0x2ULynd8FD-JKh4bCJLSRaMmWP_ibUI
+Content-Type: application/json
+
+{
+    "parent_id": 1,
+    "name_ru": "Тест1",
+    "name_en": "Test1",
+    "name_jp": "Test1",
+    "type": 6,
+    "weight": 1,
+    "price": 2000,
+    "sort": 2,
+    "car_type": 0,
+    "options": "test1",
+    "code": "BM"
+}
+
+###
+
+GET http://localhost:80/api/part-item/delete/40
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU5ODA3MDcyLCJleHAiOjE2NTk4MTA2NzIsIm5iZiI6MTY1OTgwNzA3MiwianRpIjoicXd6MThsbVR2NlJaR0h4RSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.IB0TMl7MyviH_lfNb--5WqR8rPB1ZC9MfaQNoG2-RDw
+Content-Type: application/json
+
+###
+
+GET http://localhost:80/api/part-item/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU5ODA2MTYxLCJleHAiOjE2NTk4MDk3NjEsIm5iZiI6MTY1OTgwNjE2MSwianRpIjoiZUpVdldYeDlSRFpoN1RXayIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cNitN1eOknq0x2ULynd8FD-JKh4bCJLSRaMmWP_ibUI
+Content-Type: application/json
+
+###
+
+GET http://localhost:80/api/part-item/show/10
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjU5ODA2MTYxLCJleHAiOjE2NTk4MDk3NjEsIm5iZiI6MTY1OTgwNjE2MSwianRpIjoiZUpVdldYeDlSRFpoN1RXayIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cNitN1eOknq0x2ULynd8FD-JKh4bCJLSRaMmWP_ibUI
 Content-Type: application/json

@@ -68,10 +68,19 @@ class ProviderController extends Controller
 
     public function delete($id): JsonResponse
     {
-        $provider = Provider::find($id)->delete();
+        $provider = Provider::find($id);
+        if (isset($provider)) {
+            $provider = $provider->delete();
+            return response()->json([
+                'message' => 'provider delete',
+                'provider' => $provider
+            ], 201);
+        } else {
+            $error = 'no such provider';
+        }
         return response()->json([
-            'message' => 'provider delete',
+            'message' => $error,
             'provider' => $provider
-        ], 201);
+        ], 404);
     }
 }

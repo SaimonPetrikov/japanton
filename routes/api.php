@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\ProviderController;
 use App\Http\Controllers\PartController;
+use App\Http\Controllers\PartItemController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -47,6 +48,13 @@ Route::group(['middleware' => 'api',], function () {
             Route::get('/delete/{id}', [PartController::class, 'delete']);
             Route::get('/', [PartController::class, 'index']);
             Route::get('/show/{id}', [PartController::class, 'show']);
+        });
+        Route::group(['prefix' => 'part-item',], function () {
+            Route::post('/create', [PartItemController::class, 'create']);
+            Route::post('/update/{id}', [PartItemController::class, 'update']);
+            Route::get('/delete/{id}', [PartItemController::class, 'delete']);
+            Route::get('/', [PartItemController::class, 'index']);
+            Route::get('/show/{id}', [PartItemController::class, 'show']);
         });
     });
 });
