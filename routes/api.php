@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CarController;
+use App\Http\Controllers\ProviderController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -31,6 +32,13 @@ Route::group(['middleware' => 'api',], function () {
             Route::get('/delete/{id}', [CarController::class, 'delete']);
             Route::get('/', [CarController::class, 'index']);
             Route::get('/show/{id}', [CarController::class, 'show']);
+        });
+        Route::group(['prefix' => 'provider',], function () {
+            Route::post('/create', [ProviderController::class, 'create']);
+            Route::post('/update/{id}', [ProviderController::class, 'update']);
+            Route::get('/delete/{id}', [ProviderController::class, 'delete']);
+            Route::get('/', [ProviderController::class, 'index']);
+            Route::get('/show/{id}', [ProviderController::class, 'show']);
         });
     });
 });

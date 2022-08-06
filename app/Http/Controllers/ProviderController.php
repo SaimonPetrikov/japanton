@@ -3,54 +3,54 @@
 namespace App\Http\Controllers;
 
 use App\Models\Car;
+use App\Models\Provider;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
-
-class CarController extends Controller
+class ProviderController extends Controller
 {
     public function index(): JsonResponse
     {
-        $car = Car::all();
+        $provider = Provider::all();
 
         return response()->json([
-            'message' => 'Car list',
-            'car' => $car
+            'message' => 'provider list',
+            'car' => $provider
         ], 201);
     }
 
     public function show($id): JsonResponse
     {
-        $car = Car::find($id);
+        $provider = Provider::find($id);
 
-        if (isset($car)) {
+        if (isset($provider)) {
             return response()->json([
-                'message' => 'car successfully found',
-                'car' => $car
+                'message' => 'provider successfully found',
+                'car' => $provider
             ], 201);
         }
         return response()->json([
-            'message' => 'car is not isset',
-            'car' => $car
+            'message' => 'provider is not isset',
+            'car' => $provider
         ], 404);
     }
 
     public function create(Request $request): JsonResponse
     {
-        $car = Car::create($request->all());
+        $provider = Provider::create($request->all());
 
         return response()->json([
-            'message' => 'Car successfully add',
-            'car' => $car
+            'message' => 'provider successfully add',
+            'car' => $provider
         ], 201);
     }
 
     public function update(Request $request, $id): JsonResponse
     {
 
-        $car = Car::find($id);
-        if (!empty($car)) {
-            $car = $car->update($request->all());
+        $provider = Provider::find($id);
+        if (!empty($provider)) {
+            $provider = $provider->update($request->all());
         } else {
             $error = 'no such car';
         }
@@ -58,21 +58,21 @@ class CarController extends Controller
         if (isset($error)) {
             return response()->json([
                 'message' => $error,
-                'car' => $car
+                'car' => $provider
             ], 404);
         }
         return response()->json([
-            'message' => 'car successfully update',
-            'car' => $car
+            'message' => 'provider successfully update',
+            'car' => $provider
         ], 201);
     }
 
     public function delete($id): JsonResponse
     {
-        $car = Car::find($id)->delete();
+        $provider = Provider::find($id)->delete();
         return response()->json([
-            'message' => 'car delete',
-            'car' => $car
+            'message' => 'provider delete',
+            'car' => $provider
         ], 201);
     }
 }
