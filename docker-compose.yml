@@ -48,7 +48,7 @@ services:
             SERVICE_TAGS: dev
             SERVICE_NAME: mysql
         volumes:
-            - dbdata:/var/lib/mysql/
+            - ./dbdata/:/var/tmp/mysqldb
             - ./mysql/my.cnf:/etc/mysql/my.cnf
         networks:
             - app-network
