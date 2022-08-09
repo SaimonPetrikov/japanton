@@ -84,4 +84,26 @@ class CarController extends Controller
             'car' => $car
         ], 404);
     }
+
+    public function archive(Request $request, $id): JsonResponse
+    {
+        $car = Car::find($id);
+
+        if (!empty($car)) {
+            $car = $car->update($request->all());
+        } else {
+            $error = 'error';
+        }
+
+        if (isset($error)) {
+            return response()->json([
+                'message' => $error,
+                'car' => $car
+            ], 404);
+        }
+        return response()->json([
+            'message' => 'archive successfully update',
+            'car' => $car
+        ], 201);
+    }
 }

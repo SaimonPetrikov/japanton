@@ -34,6 +34,7 @@ Route::group(['middleware' => 'api',], function () {
             Route::get('/delete/{id}', [CarController::class, 'delete']);
             Route::get('/', [CarController::class, 'index']);
             Route::get('/show/{id}', [CarController::class, 'show']);
+            Route::post('/archive/{id}', [CarController::class, 'archive']);
         });
         Route::group(['prefix' => 'provider',], function () {
             Route::post('/create', [ProviderController::class, 'create']);
