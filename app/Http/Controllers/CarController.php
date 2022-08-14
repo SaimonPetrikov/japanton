@@ -70,7 +70,7 @@ class CarController extends Controller
     public function delete($id): JsonResponse
     {
         $car = Car::find($id);
-        if (isset($part)) {
+        if (isset($car)) {
             $car = $car->delete();
             return response()->json([
                 'message' => 'car delete',
